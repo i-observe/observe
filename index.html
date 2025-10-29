@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Fixed background -->
+    <div class="bg"></div>
+
+    <!-- Particles container -->
+    <div id="particles-js"></div>
+
+    <!-- Horizontal container -->
+    <div class="horizontal-container">
+
+      <!-- Home Section -->
+      <section class="section" id="home">
+        <div class="glass">
+          <h1 class="big-text" data-value="SAGAR THAKURI">SAGAR THAKURI</h1>
+          <p class="scroll-indicator">➜</p>
+
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section" id="about">
+        <div class="glass split">
+          <div class="left-side">
+            <h1>About Me</h1>
+            <p>I’m a photographer who loves sharing my work.</p>
+          </div>
+          <div class="right-side">
+            <h2>My Vision</h2>
+            <p>I aim to capture emotion and light in every frame I take.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section class="section" id="gallery">
+        <div class="glass gallery-2row">
+          <div class="grid">
+            <div class="grid-item"><img src="img/img1.jpeg" alt="Artwork 1" /></div>
+            <div class="grid-item"><img src="img/img.jpeg" alt="Artwork 2" /></div>
+            <div class="grid-item"><img src="img/img3.jpeg" alt="Artwork 3" /></div>
+            <div class="grid-item"><img src="img/img2.jpeg" alt="Artwork 4" /></div>
+            <div class="grid-item"><img src="img/img8.jpeg" alt="Artwork 5" /></div>
+            <div class="grid-item"><img src="img/img6.jpeg" alt="Artwork 6" /></div>
+            <div class="grid-item"><img src="img/img5.jpeg" alt="Artwork 7" /></div>
+            <div class="grid-item"><img src="img/img4.jpeg" alt="Artwork 8" /></div>
+            <div class="grid-item"><img src="img/img7.jpeg" alt="Artwork 9" /></div>
+            <div class="grid-item"><img src="img/img8.jpeg" alt="Artwork 10" /></div>
+            <div class="grid-item"><img src="img/img9.jpeg" alt="Artwork 11" /></div>
+            <div class="grid-item"><img src="img/img10.jpeg" alt="Artwork 12" /></div>
+            <div class="grid-item"><img src="img/img11.jpeg" alt="Artwork 13" /></div>
+            <div class="grid-item"><img src="img/img12.jpeg" alt="Artwork 14" /></div>
+            <div class="grid-item"><img src="img/img13.jpeg" alt="Artwork 15" /></div>
+            <div class="grid-item"><img src="img/table1.jpeg" alt="Artwork 16" /></div>
+            <div class="grid-item"><img src="img/table2.jpeg" alt="Artwork 17" /></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section" id="contact">
+        <div class="glass split">
+          <div class="left-side">
+            <h1>Get in Touch</h1>
+            <p>Thanks for exploring my portfolio! I’d love to hear from you.</p>
+          </div>
+          <div class="right-side">
+            <h2>Contact Info</h2>
+            <p>Email: example@email.com</p>
+            <p>Instagram: @yourhandle</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Modal / Lightbox -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <button class="close" aria-label="Close">&times;</button>
+      <img class="modal-content" id="modal-img" alt="" />
+      <div id="caption"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="particles-config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
