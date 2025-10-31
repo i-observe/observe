@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Raleway';
-    src: url('fonts/raleway.regular.ttf') format('truetype');
+    font-family: "Raleway";
+    src: url("fonts/raleway.regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -10,7 +10,7 @@ body {
     padding: 0;
     background: #000;
     color: #fff;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
 }
 
 /* Full-screen fixed background */
@@ -19,7 +19,8 @@ body {
     inset: 0;
     width: 100vw;
     height: 100vh;
-    background: #1e5181 no-repeat center center;
+    /*background: #1e5181 no-repeat center center;*/
+    background: #000000 no-repeat center center;
     background-size: cover;
     z-index: -3;
     pointer-events: none;
@@ -27,13 +28,13 @@ body {
 
 /* Particles container */
 #particles-js {
-position: fixed;
-top: 0;
-left: 0;
-width: 100vw;
-height: 100vh;
-z-index: 0;
-pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
 }
 
 /* Box sizing */
@@ -86,7 +87,7 @@ body {
     background: rgba(255, 255, 255, 0.05); /* subtle transparent layer */
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 60px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 60px rgba(0, 0, 0, 0.08);
     padding: 60px; /* reduced from 100px */
     display: flex;
     flex-direction: column;
@@ -102,7 +103,7 @@ body {
 }
 
 .glass.split {
-    flex-direction: row;  /* keeps left and right side horizontal */
+    flex-direction: row; /* keeps left and right side horizontal */
 }
 
 /* Split layout */
@@ -111,7 +112,8 @@ body {
     width: 100%;
     height: 100%;
 }
-.left-side, .right-side {
+.left-side,
+.right-side {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -166,7 +168,7 @@ body {
     position: fixed;
     inset: 0;
     z-index: 999;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0, 0, 0, 0.85);
     align-items: center;
     justify-content: center;
     padding: 40px;
@@ -192,9 +194,9 @@ body {
     cursor: pointer;
 }
 #caption {
-color: #ddd;
-margin-top: 12px;
-font-style: italic;
+    color: #ddd;
+    margin-top: 12px;
+    font-style: italic;
 }
 
 /* Home section text */
@@ -209,7 +211,7 @@ font-style: italic;
 .floating-text {
     font-size: 1.3rem;
     color: #fff;
-    font-family: 'Raleway', sans-serif;
+    font-family: "Raleway", sans-serif;
     margin: 0;
 }
 
@@ -218,24 +220,33 @@ font-style: italic;
     font-weight: 600;
     letter-spacing: 4px;
     color: #ffffff;
-    text-shadow: 0 0 10px rgba(0,191,255,0.6);
+    text-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
     animation: scrollGlow 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes scrollGlow {
-    from { opacity: 0.6; transform: translateX(0); }
-    to { opacity: 1; transform: translateX(10px); }
+    from {
+        opacity: 0.6;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(10px);
+    }
 }
-
 
 /* Hover text effect */
-.big-text, .floating-text {
-    font-family: 'Space Grotesk', sans-serif;
+.big-text,
+.floating-text {
+    font-family: "Space Grotesk", sans-serif;
     font-weight: 600;
-    transition: background-color 0.4s ease, color 0.4s ease;
+    transition:
+        background-color 0.4s ease,
+        color 0.4s ease;
     letter-spacing: 1px;
 }
-.big-text:hover, .floating-text:hover {
+.big-text:hover,
+.floating-text:hover {
     background-color: white;
     color: black;
     border-radius: 0.4rem;
@@ -245,22 +256,21 @@ font-style: italic;
 /* ------------------ */
 /* Home page fix */
 #home .glass {
-height: 100%;           /* fill the parent section height */
-min-height: 100%;       /* ensures it matches section height */
-padding: 20px;          /* keeps space around content */
-width: 100%;
-display: flex;
-flex-direction: column;
-justify-content: center; /* vertically center content */
-align-items: center;     /* horizontally center content */
-box-sizing: border-box;
+    height: 100%; /* fill the parent section height */
+    min-height: 100%; /* ensures it matches section height */
+    padding: 20px; /* keeps space around content */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center content */
+    align-items: center; /* horizontally center content */
+    box-sizing: border-box;
 }
 
 /* Make Home section height match viewport */
 #home.section {
-height: 100vh;           /* section fills viewport */
-display: flex;
-justify-content: center;  /* centers the glass panel vertically */
-align-items: center;      /* centers horizontally */
+    height: 100vh; /* section fills viewport */
+    display: flex;
+    justify-content: center; /* centers the glass panel vertically */
+    align-items: center; /* centers horizontally */
 }
-
