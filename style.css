@@ -220,7 +220,7 @@ body {
     font-weight: 600;
     letter-spacing: 4px;
     color: #ffffff;
-    text-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
+    /*text-shadow: 0 0 10px rgba(0, 191, 255, 0.6);*/
     animation: scrollGlow 1.5s ease-in-out infinite alternate;
 }
 
