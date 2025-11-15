@@ -20,7 +20,7 @@ body {
     width: 100vw;
     height: 100vh;
     /*background: #1e5181 no-repeat center center;*/
-    background: #000000 no-repeat center center;
+    background: url("img/rain.png") no-repeat center center;
     background-size: cover;
     z-index: -3;
     pointer-events: none;
@@ -273,4 +273,43 @@ body {
     display: flex;
     justify-content: center; /* centers the glass panel vertically */
     align-items: center; /* centers horizontally */
+}
+
+/* Subtle Howl's Moving Castle image on Home page */
+#home {
+    position: relative; /* ensures absolute children position relative to section */
+}
+
+.home-castle {
+    position: fixed;
+    top: 50%; /* vertical center */
+    left: 50%; /* horizontal center */
+    transform: translate(-50%, -50%); /* center perfectly */
+    width: 500px; /* big enough to be noticeable */
+    opacity: 0.99; /* subtle behind the glass */
+    pointer-events: none; /* won't interfere with clicks or hover */
+    z-index: -1; /* behind the glass and text */
+}
+
+/* propeller */
+.castle-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.home-castle {
+    width: 500px;
+    opacity: 0.99;
+}
+
+.castle-prop {
+    position: absolute;
+    bottom: -235px; /* adjust */
+    right: -230px; /* adjust */
+    width: 100px; /* adjust size */
+    pointer-events: none;
 }
